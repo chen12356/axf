@@ -1,0 +1,51 @@
+{% extends 'base_order.html' %}
+
+{% load static %}
+
+
+{% block title %}
+    {{ block.super }}
+    订单详情
+{% endblock %}
+
+
+{% block ext_css %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static 'axf/order/css/order_detail.css' %}">
+{% endblock %}
+
+
+{% block content %}
+    {{ block.super }}
+
+
+    <h4 style='font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace'>订单编号:{{ order.id }}</h4>
+    {% for order_goods in order.axf_order_goods_set.all %}
+
+        <div class="menuList">
+            <a href="">
+                <img src="/static{{ order_goods.og_goods.productimg }}" alt="">
+                <p>{{ order_goods.og_goods.productlongname }}</p>
+                <p class="presentPrice">{{ order_goods.og_goods.marketprice}}</p>
+            </a>
+
+            <section>
+                <span>{{ order_goods.og_goods_num}}</span>
+            </section>
+
+        </div>
+    {% endfor %}
+
+    <div class="total_price">
+        <span>总计:</span>
+        <span id="total_price">{{ total_price }}</span>
+    </div>
+
+    <button class="btn btn-success btn-block" id="pay">支付</button>
+{#    <button class="btn btn-success btn-block"><a href="{% url 'axfcart:cart' %}" style="color: white">返回</a></button>#}
+
+{% endblock %}
+{% block ext_js %}
+    {{ block.super }}
+    <script type="text/javascript" src="{% static 'axf/order/js/order.js' %}"></script>
+{% endblock %}

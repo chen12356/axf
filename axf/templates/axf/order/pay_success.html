@@ -1,0 +1,13 @@
+{% extends 'base_order.html' %}
+{% load static %}
+{% block Title %}
+    交易成功
+{% endblock %}
+{% block ext_css %}
+    {{ block.super }}
+{% endblock %}
+{% block content %}
+    {{ block.super }}
+    付款成功...
+    <a href="{% url 'axfmine:mine' %}">点击此处跳转</a>
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block Title %}
+    注册
+{% endblock %}
+
+{% block ext_css %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static 'axf/user/css/user.css' %}">
+{% endblock %}
+
+{% block header %}
+    {{ block.super }}
+    <header></header>
+{% endblock %}
+
+{% block content %}
+    {{ block.super }}
+
+{% endblock %}
+{% block ext_js %}
+    {{ block.super }}
+    <script type="text/javascript" src="{% static 'axf/user/js/md5.js' %}"></script>
+{% endblock %}

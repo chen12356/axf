@@ -1,0 +1,10 @@
+ #综合排序
+ORDER_RULE_DEFAULT = '0'
+ #价格升序
+ORDER_RULE_PRICE_ASC = '1'
+ #价格降序
+ORDER_RULE_PRICE_DESC = '2'
+ #销量升序
+ORDER_RULE_NUM_ASC = '4'
+ #销量降序
+ORDER_RULE_NUM_DESC = '5'

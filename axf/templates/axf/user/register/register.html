@@ -1,0 +1,45 @@
+{% extends 'base_user.html' %}
+{% load static %}
+
+{% block ext_css %}
+    {{ block.super }}
+{% endblock %}
+
+{% block content %}
+    {{ block.super }}
+        <div class="container">
+           <form action="{% url 'axfuser:register' %}" method="post" enctype="multipart/form-data" onsubmit="return parse1();">
+               {% csrf_token %}
+              <div class="form-group">
+                <label for="exampleInputEmail1">用户名</label>
+                <input type="text" name="name" class="form-control" id="exampleInputName" placeholder="请输入3到6位用户名">
+                  <span id="NameInfo"></span>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">密码</label>
+                <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="请输入6到18密码">
+                  <span id="pwd"></span>
+              </div>
+               <div class="form-group">
+                <label for="exampleInputPassword1">确认密码</label>
+                <input type="password" name="confirm_pwd" class="form-control" id="exampleInputPassword2" placeholder="请再次输入密码">
+                   <span id="confirm_pwd"></span>
+              </div>
+               <div class="form-group">
+                <label for="exampleInputEmail1">邮箱</label>
+                <input type="email" name="email" class="form-control" id="exampleInputEmail" placeholder="请输入邮箱">
+                   <span id="emailInfo"></span>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputFile">头像</label>
+                <input type="file" name="icon" id="exampleInputFile">
+              </div>
+              <button type="submit" id="sub" class="btn btn-success btn-block" disabled >注册</button>
+            </form>
+        </div>
+{% endblock %}
+
+{% block ext_js %}
+    {{ block.super }}
+    <script  type="text/javascript" src="{% static 'axf/user/register/js/register.js' %}"></script>
+{% endblock %}

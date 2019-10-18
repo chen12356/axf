@@ -1,0 +1,147 @@
+{% extends 'base_main.html' %}
+{% load static %}
+{% block ext_css %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static 'axf/main/home/css/home.css' %}">
+    <link rel="stylesheet" href="{% static 'axf/main/home/css/swiper.css' %}">
+
+{% endblock %}
+{% block Title %}
+    首页
+{% endblock %}
+
+{% block content %}
+    {{ block.super }}
+
+    <div id="home">
+        {#    实现轮播#}
+        <div id="topSwiper" class="swiper-container">
+            <div class="swiper-wrapper">
+                {% for wheel in wheels %}
+                    <a href="" class="swiper-slide">
+                        <img src="/static{{ wheel.img }}" alt="">
+                    </a>
+                {% endfor %}
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        {#    实现菜单导航#}
+        <div class="topMenu">
+            <nav>
+                <ul>
+                    {% for nav in navs %}
+                        <li><a href=""><img src="/static{{ nav.img }}" alt=""></a>
+                            <span>{{ nav.name }}</span>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </nav>
+        </div>
+        {#    图片来回滑动#}
+        <div id="swiperMenu" class="swiper-container">
+            <ul class="swiper-wrapper">
+                {% for mustbuy in mustbuys %}
+                    <li class="swiper-slide">
+                        <a href="#"><img src="/static{{ mustbuy.img }}" alt=""></a>
+                    </li>
+                {% endfor %}
+            </ul>
+
+        </div>
+
+
+        {#    优选水果#}
+                <div class="CVS">
+                    <h2>
+                        <img src="" alt="">
+                    </h2>
+                </div>
+
+        <div class="mainInfo">
+            {% for mainshow in mainshows %}
+                <section>
+                    <h3 class="description">
+                        {{ mainshow.name }}
+                        <a href="">更多</a>
+                        <span></span>
+                    </h3>
+                    <div>
+                        <a href=""> <img src="/static{{ mainshow.img }}" alt=""></a>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <img src="/static{{ mainshow.img1 }}" alt="">
+                                <span class="description">{{ mainshow.longname1 }}</span>
+                                <span>{{ mainshow.price1 }}</span>
+                                <s>{{ mainshow.price1 }}</s>
+                            </a>
+                            <button>
+                                <span>+</span>
+                            </button>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="/static{{ mainshow.img2 }}" alt="">
+                                <span class="description">{{ mainshow.longname2 }}</span>
+                                <span>{{ mainshow.price2 }}</span>
+                                <s>{{ mainshow.price2 }}</s>
+                            </a>
+                            <button>
+                                <span>+</span>
+                            </button>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="/static{{ mainshow.img3 }}" alt="">
+                                <span class="description">{{ mainshow.longname3 }}</span>
+                                <span>{{ mainshow.price3 }}</span>
+                                <s>{{ mainshow.price3 }}</s>
+                            </a>
+                            <button>
+                                <span>+</span>
+                            </button>
+                        </li>
+
+                    </ul>
+                </section>
+            {% endfor %}
+
+        </div>
+
+
+        {#        <div class="CVS">#}
+        {##}
+        {#            {% for mainshow in mainshows %}#}
+        {#                <fieldset>#}
+        {#                    <a href="">更多</a>#}
+        {#                    <img src="/static{{ mainshow.img }}" alt="">#}
+        {#                </fieldset>#}
+        {#                <ul>#}
+        {#                    <li>#}
+        {#                        {{ mainshow.name }}#}
+        {#                        <img src="/static{{ mainshow.img1 }}" alt="">#}
+        {#                    </li>#}
+        {#                </ul>#}
+        {#                <ol>#}
+        {#                    <li>#}
+        {#                        <a href="">#}
+        {#                            <img src="/static{{ mainshow.img1 }}" alt="">#}
+        {#                        </a>#}
+        {#                    </li>#}
+        {#                </ol>#}
+        {##}
+        {##}
+        {#            {% endfor %}#}
+        {##}
+        {##}
+        {#        </div>#}
+
+    </div>
+
+{% endblock %}
+
+{% block ext_js %}
+    <script type="text/javascript" src="{% static 'axf/main/home/js/swiper.jquery.js' %}"></script>
+    <script type="text/javascript" src="{% static 'axf/main/home/js/home.js' %}"></script>
+{% endblock %}
