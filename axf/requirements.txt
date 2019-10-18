@@ -1,4 +1,4 @@
-Django==1.11.7
+Django==1.11.23
 django-redis==4.10.0
 Pillow==6.2.0
 pycryptodomex==3.7.2
