@@ -8,11 +8,10 @@ $(function () {
                 function (data) {
                 if (data['status']== 200){
                     $button.next().html(data['c_goods_num']);
-                    $('.menoy').html(data['total_price']);
                 }else {
-                    $('.menoy').html(data['total_price']);
                     $div.remove();
                 }
+                $('#menoy').html(data['total_price']);
                 }
 
             );
@@ -32,10 +31,10 @@ $(function () {
                     if (data['status']==200){
                         if (data['c_is_select']){
                             $confirm.find('span').find('span').html('✓');
-                            $('.menoy').html(data['total_price']);
+                            $('#menoy').html(data['total_price']);
                         }else{
                             $confirm.find('span').find('span').html('');
-                            $('.menoy').html(data['total_price']);
+                            $('#menoy').html(data['total_price']);
                         }if(data['is_all_select']){
                             //返回了true，说明此时，都被选中了，那么全选那需要打钩
                             $('.all_select').find('span').find('span').html('✓')
@@ -110,7 +109,7 @@ $(function () {
                     $('.all_select').find('span').find('span').html('');
                     $('.confirm').find('span').find('span').html('');
                 }
-                $('.menoy').html(data['total_price'])
+                $('#menoy').html(data['total_price'])
                 }
                 )
 

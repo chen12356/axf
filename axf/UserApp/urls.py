@@ -7,7 +7,7 @@ urlpatterns = [
 #     后端验证用户名
     url(r'^checkName/',views.checkName),
     #邮件过期时间
-    url(r'^checkEmail/',views.checkEmail),
+    url(r'^checkEmail/',views.checkEmail,name='checkEmail'),
     #测试发送邮件
     url(r'^testmail/',views.testmail),
 

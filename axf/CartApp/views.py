@@ -43,8 +43,11 @@ def total_price(user_id):
     carts = Axf_cart.objects.filter(c_user_id=user_id)
     total_price = 0
     for cart in carts:
+        print('xxxxxxxxxxxxxxxxxxx')
+        print(cart.c_goods_num)
         if cart.c_is_select:
             total_price = total_price + cart.c_goods_num * cart.c_goods.marketprice
+    print(total_price)
     return  '%.2f'%total_price
 
 @csrf_exempt
@@ -52,6 +55,7 @@ def subShopping(request):
     # 实现购物车商品的数量减少
     # goodsid = request.GET.get('goodsid')
     cartid = request.POST.get('cartid')
+    print(cartid)
     cart = Axf_cart.objects.get(pk=cartid)
 
     data = {
@@ -69,7 +73,12 @@ def subShopping(request):
         data['c_goods_num'] = cart.c_goods_num
     # user_id = request.session.get('user_id')
     user = request.user
+    print('================')
+    print(user.id)
+    print(total_price(user.id))
     data['total_price'] = total_price(user.id)
+    print('------------')
+    print(data['total_price'] )
     return JsonResponse(data=data)
 
 
@@ -86,6 +95,7 @@ def changeStatus(request):
     data['c_is_select'] = cart.c_is_select
     # user_id = request.session.get('user_id')
     user = request.user
+    print(total_price(user.id))
     data['total_price'] = total_price(user.id)
 
     # 也需要判断下是不是全部都选了，或者存在没选的
@@ -126,5 +136,6 @@ def all_select(request):
         cart.save()
     # user_id = request.session.get('user_id')
     user = request.user
+    print(user.id)
     data['total_price'] = total_price(user.id)
     return  JsonResponse(data=data)

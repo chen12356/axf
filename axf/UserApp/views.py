@@ -42,7 +42,7 @@ def register(request):
         user.u_token = token
         user.save()
         # 注册成功,设置缓存,用于设定邮件过期时间
-        cache.set(token,user.id,timeout=60)
+        cache.set(token,user.id,timeout=180)
         send_email(name,email,token)
 
         # 跳转到登录页面
@@ -134,6 +134,7 @@ def checkEmail(request):
         user = Axf_user.objects.get(pk=user_id)
         user.u_active = True
         user.save()
+        print('xxxxxx')
         #删除缓存
         cache.delete(token)
         return HttpResponse('激活成功')

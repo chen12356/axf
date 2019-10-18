@@ -8,7 +8,11 @@ from UserApp.models import Axf_user
 
 LOGIN_REQUEST = ['/axfcart/cart/',]
 #存放请求的路由并且返回json数据
-LOGIN_REQUEST_JSON = ['/axfmarket/addTocart/','/axfmarket/subTocart/']
+LOGIN_REQUEST_JSON = ['/axfmarket/addTocart/',
+                      '/axfmarket/subTocart/',
+                      '/axfcart/subShopping/',
+                      '/axfcart/all_select/',
+                      '/axfcart/changeStatus/',]
 # 由于每次都要获取user_id，直接利用中间件来处理。
 class LoginMiddleware(MiddlewareMixin):
     # 在路由分发前先执行的操作(在执行视图函数之前)

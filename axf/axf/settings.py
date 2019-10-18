@@ -135,10 +135,10 @@ MEDIA_ROOT = os.path.join(BASE_DIR,'static/upload')
 
 #配置邮箱信息
 EMAIL_HOST = 'smtp.163.com'
-EMAIL_POST = 25
+EMAIL_POST = 465
 EMAIL_HOST_USER = 'ccq1406159466@163.com'
 EMAIL_HOST_PASSWORD = 'ccq123456'
-
+EMAIL_USE_TLS = False
 
 CACHES={
         'default':{

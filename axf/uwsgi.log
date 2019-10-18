@@ -319,3 +319,314 @@ invalid request block size: 21573 (max 4096)...skip
 [pid: 7738|app: 0|req: 1/1] 127.0.0.1 () {48 vars in 976 bytes} [Thu Oct 17 20:18:21 2019] GET /axfhome/home/ => generated 17555 bytes in 1524 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
 [pid: 7728|app: 0|req: 1/2] 127.0.0.1 () {50 vars in 1067 bytes} [Thu Oct 17 20:18:35 2019] GET /axfmarket/market/ => generated 11692 bytes in 1555 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 8)
 [pid: 7748|app: 0|req: 1/3] 127.0.0.1 () {50 vars in 1063 bytes} [Thu Oct 17 20:18:40 2019] GET /axfhome/home/ => generated 17555 bytes in 1503 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 1)
+*** Starting uWSGI 2.0.18 (64bit) on [Fri Oct 18 12:53:47 2019] ***
+compiled with version: 7.4.0 on 17 October 2019 11:22:21
+os: Linux-5.0.0-31-generic #33~18.04.1-Ubuntu SMP Tue Oct 1 10:20:39 UTC 2019
+nodename: ccq-VirtualBox
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 3
+current working directory: /home/ccq/Django1905/axf
+writing pidfile to uwsgi.pid
+detected binary path: /home/ccq/Django1905/django_env/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ccq/Django1905/axf
+your processes number limit is 9848
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 0.0.0.0:8888 fd 3
+Python version: 3.6.8 (default, Oct  7 2019, 12:59:55)  [GCC 8.3.0]
+Python main interpreter initialized at 0x564ed3845d50
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 834320 bytes (814 KB) for 40 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 6 seconds on interpreter 0x564ed3845d50 pid: 8636 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 8636)
+spawned uWSGI worker 1 (pid: 8638, cores: 10)
+spawned uWSGI worker 2 (pid: 8639, cores: 10)
+spawned uWSGI worker 3 (pid: 8649, cores: 10)
+spawned uWSGI worker 4 (pid: 8650, cores: 10)
+[pid: 8649|app: 0|req: 1/1] 127.0.0.1 () {50 vars in 1015 bytes} [Fri Oct 18 12:54:08 2019] GET /axfmarket/market/ => generated 11692 bytes in 4697 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 8639|app: 0|req: 1/2] 127.0.0.1 () {50 vars in 1033 bytes} [Fri Oct 18 12:54:20 2019] GET /axfhome/home/ => generated 17555 bytes in 1796 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 8650|app: 0|req: 1/3] 127.0.0.1 () {50 vars in 1029 bytes} [Fri Oct 18 12:54:25 2019] GET /axfmine/mine/ => generated 5518 bytes in 1483 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+36
+True
+[pid: 8650|app: 0|req: 2/4] 127.0.0.1 () {50 vars in 1029 bytes} [Fri Oct 18 12:54:30 2019] GET /axfcart/cart/ => generated 4768 bytes in 337 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 8)
+[pid: 8639|app: 0|req: 2/5] 127.0.0.1 () {48 vars in 946 bytes} [Fri Oct 18 12:54:34 2019] GET /axforder/make_order/ => generated 44 bytes in 1065 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 8)
+[pid: 8639|app: 0|req: 3/6] 127.0.0.1 () {50 vars in 1070 bytes} [Fri Oct 18 12:54:38 2019] GET /axforder/order_detail/?order_id=22 => generated 1866 bytes in 298 msecs (HTTP/1.1 200) 5 headers in 255 bytes (1 switches on core 4)
+[pid: 8638|app: 0|req: 1/7] 127.0.0.1 () {50 vars in 1058 bytes} [Fri Oct 18 12:54:41 2019] GET /axforder/testpay/ => generated 0 bytes in 2074 msecs (HTTP/1.1 302) 5 headers in 973 bytes (1 switches on core 0)
+[pid: 8649|app: 0|req: 2/8] 127.0.0.1 () {48 vars in 976 bytes} [Fri Oct 18 13:03:56 2019] GET /axfhome/home/ => generated 17555 bytes in 223 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 1)
+Not Found: /favicon.ico
+[pid: 8638|app: 0|req: 2/9] 127.0.0.1 () {46 vars in 885 bytes} [Fri Oct 18 13:03:59 2019] GET /favicon.ico => generated 2611 bytes in 125 msecs (HTTP/1.1 404) 4 headers in 116 bytes (1 switches on core 2)
+[pid: 8650|app: 0|req: 3/10] 127.0.0.1 () {50 vars in 1037 bytes} [Fri Oct 18 13:04:00 2019] GET /axfmarket/market/ => generated 11692 bytes in 203 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 9)
+[pid: 8639|app: 0|req: 4/11] 127.0.0.1 () {50 vars in 1033 bytes} [Fri Oct 18 13:04:03 2019] GET /axfhome/home/ => generated 17555 bytes in 211 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 5)
+[pid: 8649|app: 0|req: 3/12] 127.0.0.1 () {48 vars in 976 bytes} [Fri Oct 18 18:48:09 2019] GET /axfhome/home/ => generated 17555 bytes in 298 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 3)
+Not Found: /favicon.ico
+[pid: 8649|app: 0|req: 4/13] 127.0.0.1 () {46 vars in 885 bytes} [Fri Oct 18 18:48:11 2019] GET /favicon.ico => generated 2611 bytes in 134 msecs (HTTP/1.1 404) 4 headers in 116 bytes (1 switches on core 4)
+[pid: 8649|app: 0|req: 5/14] 127.0.0.1 () {50 vars in 1037 bytes} [Fri Oct 18 18:48:18 2019] GET /axfmarket/market/ => generated 11692 bytes in 226 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 5)
+[pid: 8638|app: 0|req: 3/15] 127.0.0.1 () {50 vars in 1033 bytes} [Fri Oct 18 18:48:21 2019] GET /axfmine/mine/ => generated 5518 bytes in 343 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+36
+[pid: 8638|app: 0|req: 4/16] 127.0.0.1 () {50 vars in 1029 bytes} [Fri Oct 18 18:48:24 2019] GET /axfcart/cart/ => generated 3069 bytes in 238 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 8)
+[pid: 8638|app: 0|req: 5/17] 127.0.0.1 () {50 vars in 1037 bytes} [Fri Oct 18 18:48:28 2019] GET /axfmarket/market/ => generated 11692 bytes in 217 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 9)
+[pid: 8649|app: 0|req: 6/18] 127.0.0.1 () {52 vars in 1098 bytes} [Fri Oct 18 18:48:46 2019] GET /axfmarket/market/ => generated 11692 bytes in 250 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 6)
+[pid: 8649|app: 0|req: 7/19] 127.0.0.1 () {50 vars in 1063 bytes} [Fri Oct 18 18:48:52 2019] GET /axfhome/home/ => generated 17555 bytes in 194 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 8)
+[pid: 8649|app: 0|req: 8/20] 127.0.0.1 () {50 vars in 1067 bytes} [Fri Oct 18 18:48:54 2019] GET /axfmarket/market/ => generated 11692 bytes in 175 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 9)
+36
+[pid: 8638|app: 0|req: 6/21] 127.0.0.1 () {50 vars in 1063 bytes} [Fri Oct 18 18:49:37 2019] GET /axfcart/cart/ => generated 3069 bytes in 135 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 4)
+[pid: 8638|app: 0|req: 7/22] 127.0.0.1 () {50 vars in 1067 bytes} [Fri Oct 18 18:49:39 2019] GET /axfmarket/market/ => generated 11692 bytes in 147 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 3)
+------------------
+495
+[pid: 8639|app: 0|req: 5/23] 127.0.0.1 () {48 vars in 980 bytes} [Fri Oct 18 18:49:42 2019] GET /axfmarket/subTocart/ => generated 28 bytes in 160 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 8638|app: 0|req: 8/24] 127.0.0.1 () {48 vars in 980 bytes} [Fri Oct 18 18:49:42 2019] GET /axfmarket/subTocart/ => generated 28 bytes in 55 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 8650|app: 0|req: 4/25] 127.0.0.1 () {48 vars in 1003 bytes} [Fri Oct 18 18:49:42 2019] GET /axfmarket/addTocart/?goodsid=495 => generated 46 bytes in 264 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 4)
+------------------
+495
+[pid: 8649|app: 0|req: 9/26] 127.0.0.1 () {48 vars in 1003 bytes} [Fri Oct 18 18:49:42 2019] GET /axfmarket/addTocart/?goodsid=495 => generated 46 bytes in 107 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+------------------
+495
+[pid: 8638|app: 0|req: 9/27] 127.0.0.1 () {48 vars in 1003 bytes} [Fri Oct 18 18:49:42 2019] GET /axfmarket/addTocart/?goodsid=495 => generated 46 bytes in 135 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 2)
+[pid: 8639|app: 0|req: 6/28] 127.0.0.1 () {48 vars in 980 bytes} [Fri Oct 18 18:49:42 2019] GET /axfmarket/subTocart/ => generated 28 bytes in 155 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 7)
+36
+True
+[pid: 8649|app: 0|req: 10/29] 127.0.0.1 () {50 vars in 1063 bytes} [Fri Oct 18 18:49:44 2019] GET /axfcart/cart/ => generated 3919 bytes in 109 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 2)
+[pid: 8639|app: 0|req: 7/30] 127.0.0.1 () {54 vars in 1107 bytes} [Fri Oct 18 18:49:46 2019] POST /axfcart/subShopping/ => generated 69 bytes in 110 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 9)
+[pid: 8650|app: 0|req: 5/31] 127.0.0.1 () {54 vars in 1107 bytes} [Fri Oct 18 18:49:47 2019] POST /axfcart/subShopping/ => generated 69 bytes in 118 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 2)
+[pid: 8650|app: 0|req: 6/32] 127.0.0.1 () {50 vars in 1067 bytes} [Fri Oct 18 18:49:54 2019] GET /axfmarket/market/ => generated 11692 bytes in 243 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 6)
+[pid: 8649|app: 0|req: 11/33] 127.0.0.1 () {48 vars in 980 bytes} [Fri Oct 18 18:49:56 2019] GET /axfmarket/subTocart/ => generated 28 bytes in 49 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 3)
+------------------
+496
+[pid: 8650|app: 0|req: 7/34] 127.0.0.1 () {48 vars in 1003 bytes} [Fri Oct 18 18:49:56 2019] GET /axfmarket/addTocart/?goodsid=496 => generated 46 bytes in 99 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 5)
+------------------
+496
+[pid: 8650|app: 0|req: 8/35] 127.0.0.1 () {48 vars in 980 bytes} [Fri Oct 18 18:49:56 2019] GET /axfmarket/subTocart/ => generated 28 bytes in 47 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 8649|app: 0|req: 12/36] 127.0.0.1 () {48 vars in 1003 bytes} [Fri Oct 18 18:49:56 2019] GET /axfmarket/addTocart/?goodsid=496 => generated 46 bytes in 67 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 4)
+------------------
+496
+[pid: 8650|app: 0|req: 10/37] 127.0.0.1 () {48 vars in 980 bytes} [Fri Oct 18 18:49:56 2019] GET /axfmarket/subTocart/ => generated 28 bytes in 54 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 8)
+[pid: 8650|app: 0|req: 10/38] 127.0.0.1 () {48 vars in 1003 bytes} [Fri Oct 18 18:49:56 2019] GET /axfmarket/addTocart/?goodsid=496 => generated 46 bytes in 88 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+------------------
+496
+[pid: 8639|app: 0|req: 8/39] 127.0.0.1 () {48 vars in 980 bytes} [Fri Oct 18 18:49:56 2019] GET /axfmarket/subTocart/ => generated 28 bytes in 40 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 8650|app: 0|req: 11/40] 127.0.0.1 () {48 vars in 1003 bytes} [Fri Oct 18 18:49:56 2019] GET /axfmarket/addTocart/?goodsid=496 => generated 46 bytes in 62 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 9)
+36
+True
+[pid: 8639|app: 0|req: 9/41] 127.0.0.1 () {50 vars in 1063 bytes} [Fri Oct 18 18:49:58 2019] GET /axfcart/cart/ => generated 4784 bytes in 149 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 6)
+[pid: 8649|app: 0|req: 13/42] 127.0.0.1 () {48 vars in 997 bytes} [Fri Oct 18 18:50:01 2019] GET /axfcart/changeStatus/?cartid=60 => generated 97 bytes in 46 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 5)
+[pid: 8639|app: 0|req: 10/43] 127.0.0.1 () {48 vars in 997 bytes} [Fri Oct 18 18:50:02 2019] GET /axfcart/changeStatus/?cartid=60 => generated 95 bytes in 42 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 8)
+[pid: 8649|app: 0|req: 14/44] 127.0.0.1 () {48 vars in 997 bytes} [Fri Oct 18 18:50:03 2019] GET /axfcart/changeStatus/?cartid=60 => generated 97 bytes in 67 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 6)
+[pid: 8649|app: 0|req: 15/45] 127.0.0.1 () {48 vars in 997 bytes} [Fri Oct 18 18:50:04 2019] GET /axfcart/changeStatus/?cartid=60 => generated 95 bytes in 77 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 8)
+[pid: 8649|app: 0|req: 16/46] 127.0.0.1 () {48 vars in 997 bytes} [Fri Oct 18 18:50:05 2019] GET /axfcart/changeStatus/?cartid=59 => generated 97 bytes in 46 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 9)
+[pid: 8649|app: 0|req: 17/47] 127.0.0.1 () {48 vars in 997 bytes} [Fri Oct 18 18:50:06 2019] GET /axfcart/changeStatus/?cartid=59 => generated 95 bytes in 55 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 8639|app: 0|req: 11/48] 127.0.0.1 () {54 vars in 1107 bytes} [Fri Oct 18 18:52:49 2019] POST /axfcart/subShopping/ => generated 51 bytes in 111 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 4)
+[pid: 8650|app: 0|req: 12/49] 127.0.0.1 () {54 vars in 1107 bytes} [Fri Oct 18 18:52:51 2019] POST /axfcart/subShopping/ => generated 69 bytes in 96 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 3)
+36
+True
+[pid: 8638|app: 0|req: 10/50] 127.0.0.1 () {52 vars in 1094 bytes} [Fri Oct 18 18:52:56 2019] GET /axfcart/cart/ => generated 3941 bytes in 196 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 5)
+[pid: 8650|app: 0|req: 13/51] 127.0.0.1 () {54 vars in 1107 bytes} [Fri Oct 18 18:53:01 2019] POST /axfcart/subShopping/ => generated 69 bytes in 32 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 2)
+[pid: 8639|app: 0|req: 12/52] 127.0.0.1 () {54 vars in 1107 bytes} [Fri Oct 18 18:53:02 2019] POST /axfcart/subShopping/ => generated 69 bytes in 89 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 2)
+[pid: 8649|app: 0|req: 18/53] 127.0.0.1 () {50 vars in 1067 bytes} [Fri Oct 18 18:53:04 2019] GET /axfmarket/market/ => generated 11692 bytes in 134 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 1)
+------------------
+496
+[pid: 8650|app: 0|req: 14/54] 127.0.0.1 () {48 vars in 980 bytes} [Fri Oct 18 18:53:06 2019] GET /axfmarket/subTocart/ => generated 28 bytes in 128 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 5)
+[pid: 8639|app: 0|req: 13/55] 127.0.0.1 () {48 vars in 1003 bytes} [Fri Oct 18 18:53:06 2019] GET /axfmarket/addTocart/?goodsid=496 => generated 46 bytes in 159 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 8650|app: 0|req: 15/56] 127.0.0.1 () {48 vars in 980 bytes} [Fri Oct 18 18:53:06 2019] GET /axfmarket/subTocart/ => generated 28 bytes in 44 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 1)
+------------------
+496
+[pid: 8639|app: 0|req: 14/57] 127.0.0.1 () {48 vars in 1003 bytes} [Fri Oct 18 18:53:06 2019] GET /axfmarket/addTocart/?goodsid=496 => generated 46 bytes in 90 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 3)
+------------------
+496
+[pid: 8649|app: 0|req: 19/59] 127.0.0.1 () {48 vars in 980 bytes} [Fri Oct 18 18:53:06 2019] GET /axfmarket/subTocart/ => generated 28 bytes in 36 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 3)
+[pid: 8650|app: 0|req: 16/59] 127.0.0.1 () {48 vars in 1003 bytes} [Fri Oct 18 18:53:06 2019] GET /axfmarket/addTocart/?goodsid=496 => generated 46 bytes in 45 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 8)
+[pid: 8639|app: 0|req: 15/60] 127.0.0.1 () {48 vars in 980 bytes} [Fri Oct 18 18:53:07 2019] GET /axfmarket/subTocart/ => generated 28 bytes in 69 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 9)
+[pid: 8649|app: 0|req: 20/61] 127.0.0.1 () {48 vars in 1003 bytes} [Fri Oct 18 18:53:07 2019] GET /axfmarket/subTocart/?goodsid=496 => generated 46 bytes in 91 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 7)
+[pid: 8649|app: 0|req: 21/62] 127.0.0.1 () {48 vars in 980 bytes} [Fri Oct 18 18:53:08 2019] GET /axfmarket/subTocart/ => generated 28 bytes in 33 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 5)
+[pid: 8638|app: 0|req: 11/63] 127.0.0.1 () {48 vars in 1003 bytes} [Fri Oct 18 18:53:08 2019] GET /axfmarket/subTocart/?goodsid=496 => generated 46 bytes in 56 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 9)
+[pid: 8639|app: 0|req: 16/64] 127.0.0.1 () {48 vars in 980 bytes} [Fri Oct 18 18:53:08 2019] GET /axfmarket/subTocart/ => generated 28 bytes in 29 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 8638|app: 0|req: 12/65] 127.0.0.1 () {48 vars in 1003 bytes} [Fri Oct 18 18:53:08 2019] GET /axfmarket/subTocart/?goodsid=496 => generated 46 bytes in 48 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 8650|app: 0|req: 18/66] 127.0.0.1 () {48 vars in 980 bytes} [Fri Oct 18 18:53:08 2019] GET /axfmarket/subTocart/ => generated 28 bytes in 134 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 4)
+[pid: 8650|app: 0|req: 18/67] 127.0.0.1 () {48 vars in 1003 bytes} [Fri Oct 18 18:53:08 2019] GET /axfmarket/subTocart/?goodsid=496 => generated 46 bytes in 145 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 8650|app: 0|req: 19/68] 127.0.0.1 () {48 vars in 1003 bytes} [Fri Oct 18 18:53:09 2019] GET /axfmarket/subTocart/?goodsid=496 => generated 28 bytes in 27 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 9)
+[pid: 8638|app: 0|req: 13/69] 127.0.0.1 () {48 vars in 980 bytes} [Fri Oct 18 18:53:09 2019] GET /axfmarket/subTocart/ => generated 28 bytes in 29 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 2)
+[pid: 8639|app: 0|req: 17/70] 127.0.0.1 () {48 vars in 980 bytes} [Fri Oct 18 18:53:09 2019] GET /axfmarket/subTocart/ => generated 28 bytes in 41 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 6)
+[pid: 8638|app: 0|req: 14/71] 127.0.0.1 () {48 vars in 1003 bytes} [Fri Oct 18 18:53:09 2019] GET /axfmarket/subTocart/?goodsid=496 => generated 28 bytes in 56 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 7)
+[pid: 8639|app: 0|req: 18/72] 127.0.0.1 () {48 vars in 1003 bytes} [Fri Oct 18 18:53:09 2019] GET /axfmarket/subTocart/?goodsid=496 => generated 28 bytes in 35 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 5)
+[pid: 8650|app: 0|req: 20/73] 127.0.0.1 () {48 vars in 980 bytes} [Fri Oct 18 18:53:09 2019] GET /axfmarket/subTocart/ => generated 28 bytes in 42 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 7)
+------------------
+496
+[pid: 8638|app: 0|req: 15/74] 127.0.0.1 () {48 vars in 1003 bytes} [Fri Oct 18 18:53:10 2019] GET /axfmarket/addTocart/?goodsid=496 => generated 46 bytes in 129 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 8639|app: 0|req: 19/75] 127.0.0.1 () {48 vars in 980 bytes} [Fri Oct 18 18:53:10 2019] GET /axfmarket/subTocart/ => generated 28 bytes in 126 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 4)
+36
+True
+[pid: 8639|app: 0|req: 20/76] 127.0.0.1 () {50 vars in 1063 bytes} [Fri Oct 18 18:53:11 2019] GET /axfcart/cart/ => generated 3941 bytes in 131 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 2)
+[pid: 8638|app: 0|req: 16/77] 127.0.0.1 () {54 vars in 1107 bytes} [Fri Oct 18 18:53:14 2019] POST /axfcart/subShopping/ => generated 51 bytes in 78 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 5)
+[pid: 8649|app: 0|req: 22/78] 127.0.0.1 () {50 vars in 1067 bytes} [Fri Oct 18 18:53:15 2019] GET /axfmarket/market/ => generated 11692 bytes in 112 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 6)
+------------------
+495
+[pid: 8638|app: 0|req: 17/79] 127.0.0.1 () {48 vars in 980 bytes} [Fri Oct 18 18:53:17 2019] GET /axfmarket/subTocart/ => generated 28 bytes in 28 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 4)
+[pid: 8649|app: 0|req: 23/80] 127.0.0.1 () {48 vars in 1003 bytes} [Fri Oct 18 18:53:17 2019] GET /axfmarket/addTocart/?goodsid=495 => generated 46 bytes in 60 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 2)
+------------------
+495
+[pid: 8639|app: 0|req: 21/81] 127.0.0.1 () {48 vars in 980 bytes} [Fri Oct 18 18:53:17 2019] GET /axfmarket/subTocart/ => generated 28 bytes in 32 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 7)
+[pid: 8649|app: 0|req: 24/82] 127.0.0.1 () {48 vars in 1003 bytes} [Fri Oct 18 18:53:17 2019] GET /axfmarket/addTocart/?goodsid=495 => generated 46 bytes in 46 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 1)
+------------------
+495
+[pid: 8638|app: 0|req: 18/83] 127.0.0.1 () {48 vars in 980 bytes} [Fri Oct 18 18:53:18 2019] GET /axfmarket/subTocart/ => generated 28 bytes in 28 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 3)
+[pid: 8639|app: 0|req: 22/84] 127.0.0.1 () {48 vars in 1003 bytes} [Fri Oct 18 18:53:18 2019] GET /axfmarket/addTocart/?goodsid=495 => generated 46 bytes in 51 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 1)
+------------------
+495
+[pid: 8639|app: 0|req: 24/85] 127.0.0.1 () {48 vars in 980 bytes} [Fri Oct 18 18:53:18 2019] GET /axfmarket/subTocart/ => generated 28 bytes in 81 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 9)
+[pid: 8639|app: 0|req: 24/86] 127.0.0.1 () {48 vars in 1003 bytes} [Fri Oct 18 18:53:18 2019] GET /axfmarket/addTocart/?goodsid=495 => generated 46 bytes in 101 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 3)
+------------------
+495
+[pid: 8649|app: 0|req: 25/87] 127.0.0.1 () {48 vars in 980 bytes} [Fri Oct 18 18:53:18 2019] GET /axfmarket/subTocart/ => generated 28 bytes in 29 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 4)
+[pid: 8650|app: 0|req: 21/88] 127.0.0.1 () {48 vars in 1003 bytes} [Fri Oct 18 18:53:18 2019] GET /axfmarket/addTocart/?goodsid=495 => generated 46 bytes in 49 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 3)
+------------------
+495
+[pid: 8649|app: 0|req: 27/89] 127.0.0.1 () {48 vars in 980 bytes} [Fri Oct 18 18:53:18 2019] GET /axfmarket/subTocart/ => generated 28 bytes in 60 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 5)
+[pid: 8649|app: 0|req: 27/90] 127.0.0.1 () {48 vars in 1003 bytes} [Fri Oct 18 18:53:18 2019] GET /axfmarket/addTocart/?goodsid=495 => generated 46 bytes in 91 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 7)
+------------------
+495
+[pid: 8639|app: 0|req: 26/91] 127.0.0.1 () {48 vars in 980 bytes} [Fri Oct 18 18:53:18 2019] GET /axfmarket/subTocart/ => generated 28 bytes in 53 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 6)
+[pid: 8639|app: 0|req: 26/92] 127.0.0.1 () {48 vars in 1003 bytes} [Fri Oct 18 18:53:18 2019] GET /axfmarket/addTocart/?goodsid=495 => generated 46 bytes in 64 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+36
+True
+[pid: 8649|app: 0|req: 28/93] 127.0.0.1 () {50 vars in 1063 bytes} [Fri Oct 18 18:53:19 2019] GET /axfcart/cart/ => generated 3919 bytes in 171 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 8)
+[pid: 8649|app: 0|req: 29/94] 127.0.0.1 () {54 vars in 1107 bytes} [Fri Oct 18 18:53:23 2019] POST /axfcart/subShopping/ => generated 69 bytes in 81 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+36
+True
+[pid: 8650|app: 0|req: 22/95] 127.0.0.1 () {54 vars in 1116 bytes} [Fri Oct 18 18:57:32 2019] GET /axfcart/cart/ => generated 3916 bytes in 174 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+Not Found: /favicon.ico
+[pid: 8650|app: 0|req: 23/96] 127.0.0.1 () {50 vars in 968 bytes} [Fri Oct 18 18:57:33 2019] GET /favicon.ico => generated 2611 bytes in 103 msecs (HTTP/1.1 404) 4 headers in 116 bytes (1 switches on core 9)
+[pid: 8650|app: 0|req: 24/97] 127.0.0.1 () {54 vars in 1107 bytes} [Fri Oct 18 18:57:35 2019] POST /axfcart/subShopping/ => generated 69 bytes in 98 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 7)
+[pid: 8649|app: 0|req: 30/98] 127.0.0.1 () {54 vars in 1107 bytes} [Fri Oct 18 18:57:36 2019] POST /axfcart/subShopping/ => generated 69 bytes in 69 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 6)
+[pid: 8649|app: 0|req: 31/99] 127.0.0.1 () {54 vars in 1107 bytes} [Fri Oct 18 18:57:37 2019] POST /axfcart/subShopping/ => generated 69 bytes in 79 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 2)
+[pid: 8649|app: 0|req: 32/100] 127.0.0.1 () {54 vars in 1107 bytes} [Fri Oct 18 18:57:37 2019] POST /axfcart/subShopping/ => generated 69 bytes in 34 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 8638|app: 0|req: 19/101] 127.0.0.1 () {54 vars in 1107 bytes} [Fri Oct 18 18:57:37 2019] POST /axfcart/subShopping/ => generated 69 bytes in 62 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 8650|app: 0|req: 25/102] 127.0.0.1 () {54 vars in 1107 bytes} [Fri Oct 18 18:57:37 2019] POST /axfcart/subShopping/ => generated 51 bytes in 33 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 6)
+[pid: 8649|app: 0|req: 33/103] 127.0.0.1 () {50 vars in 1067 bytes} [Fri Oct 18 18:57:39 2019] GET /axfmarket/market/ => generated 11692 bytes in 198 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 3)
+------------------
+496
+[pid: 8649|app: 0|req: 35/104] 127.0.0.1 () {48 vars in 980 bytes} [Fri Oct 18 18:57:42 2019] GET /axfmarket/subTocart/ => generated 28 bytes in 102 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 5)
+[pid: 8649|app: 0|req: 35/105] 127.0.0.1 () {48 vars in 1003 bytes} [Fri Oct 18 18:57:42 2019] GET /axfmarket/addTocart/?goodsid=496 => generated 46 bytes in 122 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 4)
+------------------
+496
+[pid: 8649|app: 0|req: 37/106] 127.0.0.1 () {48 vars in 980 bytes} [Fri Oct 18 18:57:42 2019] GET /axfmarket/subTocart/ => generated 28 bytes in 51 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 9)
+[pid: 8649|app: 0|req: 37/107] 127.0.0.1 () {48 vars in 1003 bytes} [Fri Oct 18 18:57:42 2019] GET /axfmarket/addTocart/?goodsid=496 => generated 46 bytes in 67 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 7)
+------------------
+496
+[pid: 8638|app: 0|req: 21/108] 127.0.0.1 () {48 vars in 980 bytes} [Fri Oct 18 18:57:42 2019] GET /axfmarket/subTocart/ => generated 28 bytes in 65 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 4)
+[pid: 8638|app: 0|req: 21/109] 127.0.0.1 () {48 vars in 1003 bytes} [Fri Oct 18 18:57:42 2019] GET /axfmarket/addTocart/?goodsid=496 => generated 46 bytes in 87 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 1)
+------------------
+496
+[pid: 8650|app: 0|req: 26/110] 127.0.0.1 () {48 vars in 1003 bytes} [Fri Oct 18 18:57:42 2019] GET /axfmarket/addTocart/?goodsid=496 => generated 46 bytes in 51 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 2)
+[pid: 8639|app: 0|req: 27/111] 127.0.0.1 () {48 vars in 980 bytes} [Fri Oct 18 18:57:42 2019] GET /axfmarket/subTocart/ => generated 28 bytes in 46 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 5)
+------------------
+496
+[pid: 8639|app: 0|req: 29/112] 127.0.0.1 () {48 vars in 980 bytes} [Fri Oct 18 18:57:43 2019] GET /axfmarket/subTocart/ => generated 28 bytes in 49 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 8639|app: 0|req: 29/113] 127.0.0.1 () {48 vars in 1003 bytes} [Fri Oct 18 18:57:43 2019] GET /axfmarket/addTocart/?goodsid=496 => generated 46 bytes in 73 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 7)
+------------------
+496
+[pid: 8649|app: 0|req: 38/114] 127.0.0.1 () {48 vars in 980 bytes} [Fri Oct 18 18:57:43 2019] GET /axfmarket/subTocart/ => generated 28 bytes in 54 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 8)
+[pid: 8638|app: 0|req: 22/115] 127.0.0.1 () {48 vars in 1003 bytes} [Fri Oct 18 18:57:43 2019] GET /axfmarket/addTocart/?goodsid=496 => generated 46 bytes in 79 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 9)
+------------------
+496
+[pid: 8649|app: 0|req: 40/116] 127.0.0.1 () {48 vars in 980 bytes} [Fri Oct 18 18:57:43 2019] GET /axfmarket/subTocart/ => generated 28 bytes in 53 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 2)
+[pid: 8649|app: 0|req: 40/117] 127.0.0.1 () {48 vars in 1003 bytes} [Fri Oct 18 18:57:43 2019] GET /axfmarket/addTocart/?goodsid=496 => generated 46 bytes in 65 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 6)
+------------------
+495
+[pid: 8639|app: 0|req: 30/118] 127.0.0.1 () {48 vars in 980 bytes} [Fri Oct 18 18:57:44 2019] GET /axfmarket/subTocart/ => generated 28 bytes in 94 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 9)
+[pid: 8649|app: 0|req: 41/119] 127.0.0.1 () {48 vars in 1003 bytes} [Fri Oct 18 18:57:44 2019] GET /axfmarket/addTocart/?goodsid=495 => generated 46 bytes in 105 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 1)
+------------------
+495
+[pid: 8650|app: 0|req: 27/120] 127.0.0.1 () {48 vars in 980 bytes} [Fri Oct 18 18:57:44 2019] GET /axfmarket/subTocart/ => generated 28 bytes in 43 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 3)
+[pid: 8649|app: 0|req: 42/121] 127.0.0.1 () {48 vars in 1003 bytes} [Fri Oct 18 18:57:44 2019] GET /axfmarket/addTocart/?goodsid=495 => generated 46 bytes in 63 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 3)
+------------------
+495
+[pid: 8649|app: 0|req: 44/122] 127.0.0.1 () {48 vars in 980 bytes} [Fri Oct 18 18:57:44 2019] GET /axfmarket/subTocart/ => generated 28 bytes in 55 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 4)
+[pid: 8649|app: 0|req: 44/123] 127.0.0.1 () {48 vars in 1003 bytes} [Fri Oct 18 18:57:44 2019] GET /axfmarket/addTocart/?goodsid=495 => generated 46 bytes in 65 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 5)
+------------------
+495
+[pid: 8649|app: 0|req: 46/124] 127.0.0.1 () {48 vars in 980 bytes} [Fri Oct 18 18:57:44 2019] GET /axfmarket/subTocart/ => generated 28 bytes in 66 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 7)
+[pid: 8649|app: 0|req: 46/125] 127.0.0.1 () {48 vars in 1003 bytes} [Fri Oct 18 18:57:44 2019] GET /axfmarket/addTocart/?goodsid=495 => generated 46 bytes in 77 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 9)
+------------------
+495
+[pid: 8650|app: 0|req: 28/126] 127.0.0.1 () {48 vars in 980 bytes} [Fri Oct 18 18:57:45 2019] GET /axfmarket/subTocart/ => generated 28 bytes in 43 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 4)
+[pid: 8649|app: 0|req: 47/127] 127.0.0.1 () {48 vars in 1003 bytes} [Fri Oct 18 18:57:45 2019] GET /axfmarket/addTocart/?goodsid=495 => generated 46 bytes in 64 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+36
+True
+[pid: 8650|app: 0|req: 29/128] 127.0.0.1 () {50 vars in 1063 bytes} [Fri Oct 18 18:57:46 2019] GET /axfcart/cart/ => generated 4782 bytes in 146 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 8649|app: 0|req: 48/129] 127.0.0.1 () {54 vars in 1107 bytes} [Fri Oct 18 18:57:51 2019] POST /axfcart/subShopping/ => generated 69 bytes in 118 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 8)
+36
+True
+[pid: 8638|app: 0|req: 23/130] 127.0.0.1 () {54 vars in 1116 bytes} [Fri Oct 18 18:58:27 2019] GET /axfcart/cart/ => generated 4781 bytes in 216 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 2)
+Not Found: /favicon.ico
+[pid: 8638|app: 0|req: 24/131] 127.0.0.1 () {50 vars in 968 bytes} [Fri Oct 18 18:58:28 2019] GET /favicon.ico => generated 2611 bytes in 86 msecs (HTTP/1.1 404) 4 headers in 116 bytes (1 switches on core 5)
+[pid: 8650|app: 0|req: 30/132] 127.0.0.1 () {54 vars in 1107 bytes} [Fri Oct 18 18:58:29 2019] POST /axfcart/subShopping/ => generated 69 bytes in 64 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 1)
+36
+True
+[pid: 8650|app: 0|req: 31/133] 127.0.0.1 () {54 vars in 1116 bytes} [Fri Oct 18 18:59:23 2019] GET /axfcart/cart/ => generated 4781 bytes in 250 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 9)
+Not Found: /favicon.ico
+[pid: 8649|app: 0|req: 49/134] 127.0.0.1 () {50 vars in 968 bytes} [Fri Oct 18 18:59:25 2019] GET /favicon.ico => generated 2611 bytes in 78 msecs (HTTP/1.1 404) 4 headers in 116 bytes (1 switches on core 2)
+[pid: 8649|app: 0|req: 50/135] 127.0.0.1 () {54 vars in 1107 bytes} [Fri Oct 18 18:59:27 2019] POST /axfcart/subShopping/ => generated 69 bytes in 92 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 6)
+[pid: 8639|app: 0|req: 31/136] 127.0.0.1 () {54 vars in 1107 bytes} [Fri Oct 18 18:59:31 2019] POST /axfcart/subShopping/ => generated 69 bytes in 106 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 8)
+36
+True
+[pid: 8638|app: 0|req: 25/137] 127.0.0.1 () {52 vars in 1094 bytes} [Fri Oct 18 19:00:57 2019] GET /axfcart/cart/ => generated 4781 bytes in 165 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 4)
+[pid: 8638|app: 0|req: 26/138] 127.0.0.1 () {54 vars in 1107 bytes} [Fri Oct 18 19:00:59 2019] POST /axfcart/subShopping/ => generated 69 bytes in 70 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 1)
+36
+True
+[pid: 8650|app: 0|req: 32/139] 127.0.0.1 () {54 vars in 1116 bytes} [Fri Oct 18 19:02:39 2019] GET /axfcart/cart/ => generated 4781 bytes in 254 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 7)
+Not Found: /favicon.ico
+[pid: 8638|app: 0|req: 27/140] 127.0.0.1 () {50 vars in 968 bytes} [Fri Oct 18 19:02:40 2019] GET /favicon.ico => generated 2611 bytes in 77 msecs (HTTP/1.1 404) 4 headers in 116 bytes (1 switches on core 3)
+[pid: 8638|app: 0|req: 28/141] 127.0.0.1 () {54 vars in 1107 bytes} [Fri Oct 18 19:02:42 2019] POST /axfcart/subShopping/ => generated 69 bytes in 96 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 6)
+[pid: 8638|app: 0|req: 29/142] 127.0.0.1 () {54 vars in 1107 bytes} [Fri Oct 18 19:03:02 2019] POST /axfcart/subShopping/ => generated 69 bytes in 92 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 9)
+36
+True
+[pid: 8639|app: 0|req: 32/143] 127.0.0.1 () {54 vars in 1116 bytes} [Fri Oct 18 19:03:06 2019] GET /axfcart/cart/ => generated 4781 bytes in 177 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 4)
+Not Found: /favicon.ico
+[pid: 8649|app: 0|req: 51/144] 127.0.0.1 () {50 vars in 968 bytes} [Fri Oct 18 19:03:07 2019] GET /favicon.ico => generated 2611 bytes in 71 msecs (HTTP/1.1 404) 4 headers in 116 bytes (1 switches on core 1)
+[pid: 8649|app: 0|req: 52/145] 127.0.0.1 () {54 vars in 1107 bytes} [Fri Oct 18 19:03:08 2019] POST /axfcart/subShopping/ => generated 69 bytes in 92 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 4)
+36
+True
+[pid: 8639|app: 0|req: 33/146] 127.0.0.1 () {54 vars in 1116 bytes} [Fri Oct 18 19:04:07 2019] GET /axfcart/cart/ => generated 4781 bytes in 196 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 2)
+Not Found: /favicon.ico
+[pid: 8638|app: 0|req: 30/147] 127.0.0.1 () {50 vars in 968 bytes} [Fri Oct 18 19:04:08 2019] GET /favicon.ico => generated 2611 bytes in 51 msecs (HTTP/1.1 404) 4 headers in 116 bytes (1 switches on core 7)
+[pid: 8638|app: 0|req: 31/148] 127.0.0.1 () {50 vars in 1067 bytes} [Fri Oct 18 19:04:09 2019] GET /axfmarket/market/ => generated 11692 bytes in 120 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+------------------
+495
+[pid: 8639|app: 0|req: 34/149] 127.0.0.1 () {48 vars in 980 bytes} [Fri Oct 18 19:04:11 2019] GET /axfmarket/subTocart/ => generated 28 bytes in 80 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 5)
+[pid: 8650|app: 0|req: 33/150] 127.0.0.1 () {48 vars in 1003 bytes} [Fri Oct 18 19:04:11 2019] GET /axfmarket/addTocart/?goodsid=495 => generated 46 bytes in 101 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 6)
+------------------
+495
+[pid: 8638|app: 0|req: 32/151] 127.0.0.1 () {48 vars in 980 bytes} [Fri Oct 18 19:04:12 2019] GET /axfmarket/subTocart/ => generated 28 bytes in 61 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 2)
+[pid: 8639|app: 0|req: 35/152] 127.0.0.1 () {48 vars in 1003 bytes} [Fri Oct 18 19:04:12 2019] GET /axfmarket/addTocart/?goodsid=495 => generated 46 bytes in 82 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 1)
+36
+True
+[pid: 8649|app: 0|req: 53/153] 127.0.0.1 () {50 vars in 1063 bytes} [Fri Oct 18 19:04:14 2019] GET /axfcart/cart/ => generated 4781 bytes in 176 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 5)
+[pid: 8649|app: 0|req: 54/154] 127.0.0.1 () {48 vars in 997 bytes} [Fri Oct 18 19:04:18 2019] GET /axfcart/changeStatus/?cartid=64 => generated 97 bytes in 65 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 9)
+[pid: 8649|app: 0|req: 55/155] 127.0.0.1 () {48 vars in 997 bytes} [Fri Oct 18 19:04:19 2019] GET /axfcart/changeStatus/?cartid=64 => generated 95 bytes in 43 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 8639|app: 0|req: 36/156] 127.0.0.1 () {48 vars in 997 bytes} [Fri Oct 18 19:04:20 2019] GET /axfcart/changeStatus/?cartid=64 => generated 97 bytes in 36 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 7)
+[pid: 8649|app: 0|req: 56/157] 127.0.0.1 () {48 vars in 997 bytes} [Fri Oct 18 19:04:21 2019] GET /axfcart/changeStatus/?cartid=64 => generated 95 bytes in 82 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 8)
+[pid: 8639|app: 0|req: 37/158] 127.0.0.1 () {48 vars in 997 bytes} [Fri Oct 18 19:04:22 2019] GET /axfcart/changeStatus/?cartid=63 => generated 97 bytes in 47 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 9)
+36
+False
+[pid: 8639|app: 0|req: 38/159] 127.0.0.1 () {52 vars in 1094 bytes} [Fri Oct 18 19:04:24 2019] GET /axfcart/cart/ => generated 4766 bytes in 132 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 8649|app: 0|req: 57/160] 127.0.0.1 () {48 vars in 997 bytes} [Fri Oct 18 19:04:27 2019] GET /axfcart/changeStatus/?cartid=63 => generated 95 bytes in 56 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 6)
+36
+True
+[pid: 8639|app: 0|req: 39/161] 127.0.0.1 () {52 vars in 1094 bytes} [Fri Oct 18 19:04:29 2019] GET /axfcart/cart/ => generated 4781 bytes in 129 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 8)
+[pid: 8649|app: 0|req: 58/162] 127.0.0.1 () {48 vars in 997 bytes} [Fri Oct 18 19:04:35 2019] GET /axfcart/changeStatus/?cartid=64 => generated 97 bytes in 42 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 8649|app: 0|req: 59/163] 127.0.0.1 () {48 vars in 997 bytes} [Fri Oct 18 19:04:36 2019] GET /axfcart/changeStatus/?cartid=64 => generated 95 bytes in 71 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 4)
+[pid: 8650|app: 0|req: 34/164] 127.0.0.1 () {54 vars in 1107 bytes} [Fri Oct 18 19:04:39 2019] POST /axfcart/subShopping/ => generated 69 bytes in 49 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 2)
+36
+True
+[pid: 8649|app: 0|req: 60/165] 127.0.0.1 () {54 vars in 1116 bytes} [Fri Oct 18 19:06:44 2019] GET /axfcart/cart/ => generated 4781 bytes in 221 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 7)
+Not Found: /favicon.ico
+[pid: 8649|app: 0|req: 61/166] 127.0.0.1 () {50 vars in 968 bytes} [Fri Oct 18 19:06:45 2019] GET /favicon.ico => generated 2611 bytes in 50 msecs (HTTP/1.1 404) 4 headers in 116 bytes (1 switches on core 5)
+[pid: 8649|app: 0|req: 62/167] 127.0.0.1 () {48 vars in 997 bytes} [Fri Oct 18 19:06:47 2019] GET /axfcart/changeStatus/?cartid=64 => generated 97 bytes in 90 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 9)
+[pid: 8649|app: 0|req: 63/168] 127.0.0.1 () {48 vars in 1001 bytes} [Fri Oct 18 19:06:51 2019] GET /axfcart/all_select/?cartid_str=64 => generated 51 bytes in 105 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
